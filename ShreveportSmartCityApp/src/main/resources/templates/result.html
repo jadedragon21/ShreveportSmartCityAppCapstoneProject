@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/fragments :: head"></head>
+<head>
+    <link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body style="padding: 0">
+<div th:replace="fragments/fragments :: navbar"></div>
+<main role="main">
+    <div class="container">
+        <h3 th:if='${error}' th:text='${error}' style='color: red;'></h3>
+        <div th:unless='${error}'>
+            <h3 style='color: green;'>Success!</h3>
+            <div>Id.: <span th:text='${id}' /></div>
+            <div>Status: <span th:text='${status}' /></div>
+            <div>Charge id.: <span th:text='${chargeId}' /></div>
+            <div>Balance transaction id.: <span th:text='${balance_transaction}' /></div>
+        </div>
+        <a href='/checkout'>Checkout again</a>
+    </div>
+</main>
+</body>
+</html>

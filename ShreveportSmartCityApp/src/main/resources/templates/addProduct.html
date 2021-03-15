@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="fragments/fragments :: head"></head>
+<body>
+<div th:replace="fragments/fragments :: navbar"></div>
+
+
+<form class="form" th:action="@{/product}" th:object="${product}" method="post">
+    <h2 class="form-heading" style="text-align: center">Add a new Product</h2>
+    <!--Name-->
+    <p>
+        <label for="name" class="sr-only">Name</label>
+        <label th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+               class="validation-message"></label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="Name"
+               th:field="*{name}">
+    </p>
+    <!--Description-->
+    <p>
+        <label for="name" class="sr-only">Description</label>
+        <label th:if="${#fields.hasErrors('description')}" th:errors="*{description}"
+               class="validation-message"></label>
+        <input type="text" id="description" name="description" class="form-control" placeholder="Description"
+               th:field="*{description}">
+    </p>
+    <!--Brand-->
+    <p>
+        <label for="brand" class="sr-only">Brand</label>
+        <label th:if="${#fields.hasErrors('brand')}" th:errors="*{brand}"
+               class="validation-message"></label>
+        <input type="text" id="brand" name="brand" class="form-control" placeholder="Brand"
+               th:field="*{brand}">
+    </p>
+    <!--Category-->
+    <p>
+        <label for="category" class="sr-only">Category</label>
+        <label th:if="${#fields.hasErrors('category')}" th:errors="*{category}"
+               class="validation-message"></label>
+        <input type="text" id="category" name="category" class="form-control" placeholder="Category"
+               th:field="*{category}">
+    </p>
+    <!--Image URL-->
+    <p>
+        <label for="image" class="sr-only">Image URL</label>
+        <label th:if="${#fields.hasErrors('image')}" th:errors="*{image}"
+               class="validation-message"></label>
+        <input type="text" id="image" name="image" class="form-control" placeholder="Image URL"
+               th:field="*{image}">
+    </p>
+    <!--Quantity-->
+    <p>
+        <label for="quantity" class="sr-only">Quantity</label>
+        <label th:if="${#fields.hasErrors('quantity')}" th:errors="*{quantity}"
+               class="validation-message"></label>
+        <input type="text" id="quantity" name="quantity" class="form-control" placeholder="Quantity"
+               th:field="*{quantity}">
+    </p>
+    <!--Price-->
+    <p>
+        <label for="price" class="sr-only">Price</label>
+        <label th:if="${#fields.hasErrors('price')}" th:errors="*{price}"
+               class="validation-message"></label>
+        <input type="text" id="price" name="price" class="form-control" placeholder="Price"
+               th:field="*{price}">
+    </p>
+
+
+    <div style="display: flex; justify-content: space-between">
+        <button class="btn btn-lg btn-primary" name="submit" value="add" type="submit"
+        >
+            Add Product
+        </button>
+    </div>
+</form>
+
+
+<div th:replace="fragments/fragments :: footer"></div>
+</body>
+</html>
