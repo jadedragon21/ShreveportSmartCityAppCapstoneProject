@@ -29,14 +29,15 @@ public class MapController {
 //        System.out.println(location);
 //        log.info("This is my location: {}", location);
         model.addAttribute(new Location());
-        return "mappyweather.html";
+        return "mappyweather";
     }
 
     @PostMapping(value="/weather")
     public String getMapForLocation(Location location, Model model) {
         mapService.addCoordinates(location);
         model.addAttribute(location);
-        return "mappyweather.html";
+        System.out.println(location);
+        return "mappyweather";
     }
 
 
