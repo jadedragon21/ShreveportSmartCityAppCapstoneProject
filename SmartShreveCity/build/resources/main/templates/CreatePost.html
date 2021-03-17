@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Latest compiled and minified CSS -->
+    <link href="../../webjars/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+...
+<div class="card w-50">
+    <div class="card-body" style="background-color:black; color: lightgreen">
+        <p>Please use the form below to submit a Review Post:</p>
+        <form action="#" th:action="@{/blogposts}" th:object="${blogPost}" method="post">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" th:field="*{title}" /></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" th:field="*{author}" /></td>
+                </tr>
+                <tr>
+                    <td>Review:</td>
+                    <td><input type="text" th:field="*{blogEntry}" /></td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit Your Post</button></td>
+                </tr>
+            </table>
+        </form>
+
+    </div>
+</div>
+
+...
+<div class="card w-75" style=";">
+    <div class="card-body">
+        <h3>Review Post Form</h3>
+        <p>Thank you for your Review!</p>
+        <h4>Review Post:</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h1 th:text="${title}"></h1>
+                    </div>
+                    <div class="panel-body">
+                        <strong><p th:text="${author}"/></strong>
+                        <p th:text="${blogEntry}"/>
+                    </div>
+                    <div class="panel-footer">
+    </div>
+</div>
+
+                <!-- Link to Update -->
+                <!-- Link to Show  -->
+                <!--  Link to Destroy -->
+<!--                <a th:href="@{/}">-->
+<!--                    <button class="btn btn-success">Back To Home Page</button>-->
+<!--                </a>-->
+<!--                <a th:href="@{/blogposts/createPost}">-->
+<!--                    <button class="btn btn-primary">Submit a New Blog Post</button>-->
+<!--                </a>-->
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div th:replace="/fragments/styling :: head-style" ></div>
+
+</body>
+</html>
