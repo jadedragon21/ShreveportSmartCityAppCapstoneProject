@@ -12,7 +12,5 @@ com/tts/capstone/SmartShreveCity/MapApp/service/MapServiceImpl.java
  com.tts.capstone.SmartShreveCity.MapApp.service.MapServiceImpl
 com/tts/capstone/SmartShreveCity/MapApp/model/Geometry.java
  com.tts.capstone.SmartShreveCity.MapApp.model.Geometry
-com/tts/capstone/SmartShreveCity/MapApp/model/HomeModel.java
- com.tts.capstone.SmartShreveCity.MapApp.model.HomeModel
 com/tts/capstone/SmartShreveCity/MapApp/model/GeocodingResponse.java
  com.tts.capstone.SmartShreveCity.MapApp.model.GeocodingResponse
