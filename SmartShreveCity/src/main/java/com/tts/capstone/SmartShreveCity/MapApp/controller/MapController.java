@@ -40,5 +40,14 @@ public class MapController {
         return "mappyweather";
     }
 
+    // TODO: new feature in the future put this in StoreController with a post mapping
+    // we use a getmapping to access the html template via a get HTTP method
+    //@GetMapping("/store")
+    //public String getStore() {
+    // we return a string that is a reference to a template
+    //return "store";
+    //}
+
+
 
 }
