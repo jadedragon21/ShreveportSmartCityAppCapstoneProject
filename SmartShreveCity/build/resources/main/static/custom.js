@@ -12,7 +12,7 @@
     });
 
     let image = {
-            url: '/Catbusbus.png',
+            url: 'images/Catbusbus.png',
             scaledSize: new google.maps.Size(70, 70)
       };
 
@@ -31,7 +31,7 @@
     const trafficLayer = new google.maps.TrafficLayer();
       trafficLayer.setMap(map);
 
-     let contentString = "<h2>" + city + ", " + state + ", where your dreams come true!</h2>";
+     let contentString = "<h2>" + city + ", " + state + ", Where you can bring your hard work to fruition!</h2>";
 
       let infowindow = new google.maps.InfoWindow({
             content: contentString

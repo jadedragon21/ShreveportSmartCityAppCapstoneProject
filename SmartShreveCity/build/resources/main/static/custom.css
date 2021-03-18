@@ -1,4 +1,25 @@
 
+/*map css*/
+.map-container-5{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+
+}
+.col-md-6{
+margin: 0 auto;
+float: none;
+margin-bottom: 10px;
+}
+.map-container-5 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+
  #map {
     height: 95%;
   }
