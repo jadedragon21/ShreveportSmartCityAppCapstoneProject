@@ -23,11 +23,11 @@ public class AuthorizationController {
     }
 
     //1st page
-    @GetMapping("/signup")
+    @GetMapping("/")
     public String registration(Model model) {
         User user = new User();
         model.addAttribute("user",user);
-        return "/registration";
+        return "/login";
     }
 
     @PostMapping("/signup")
