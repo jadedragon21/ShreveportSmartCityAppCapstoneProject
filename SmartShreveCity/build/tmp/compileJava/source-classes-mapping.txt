@@ -32,7 +32,7 @@ com/tts/capstone/SmartShreveCity/service/UserServiceImpl.java
  com.tts.capstone.SmartShreveCity.service.UserServiceImpl
 com/tts/capstone/SmartShreveCity/MapApp/model/GeocodingResponse.java
  com.tts.capstone.SmartShreveCity.MapApp.model.GeocodingResponse
-com/tts/capstone/SmartShreveCity/controller/AuthorizationController.java
- com.tts.capstone.SmartShreveCity.controller.AuthorizationController
 com/tts/capstone/SmartShreveCity/configuration/SecurityConfiguration.java
  com.tts.capstone.SmartShreveCity.configuration.SecurityConfiguration
+com/tts/capstone/SmartShreveCity/controller/AuthorizationController.java
+ com.tts.capstone.SmartShreveCity.controller.AuthorizationController
