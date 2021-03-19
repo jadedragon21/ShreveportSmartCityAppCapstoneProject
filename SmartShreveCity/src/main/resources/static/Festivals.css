@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100, 300, 400, 500, 600, 700, 800, 900&display=swap'); 
+
+/* font-family: 'Maven-Pro'; */
+/* 
+
+.section-intro header { 
+	display: flex; 
+	flex: 4; 
+	flex-direction: row; 
+	justify-content: center; 
+	align-items: center; 
+}  */
+
+
+.card {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+  }
+
+  .row {
+   display: flex;
+   flex-wrap: wrap;
+}
+/* 
+.row > div[class*='col-'] {
+  display: flex;
+} */
+
+.cards {
+   display: flex;
+   justify-content: space-between;
+}
+
+
+.about-section { 
+	display: flex; 
+	align-items: center; 
+	background-color: #f3f3f3c0; 
+	padding: 50px 30px; 
+} 
+
+
+
+
+.about-section h3 {
+	text-align: left; 
+	width: 100%; 
+	margin: auto; 
+	font-family: 'Maven-Pro', bold; 
+	font-size: 2.4em;
+
+}
+
+.about-section p { 
+	text-align: center; 
+	width: 60%; 
+	margin: auto; 
+	font-family: 'Maven-Pro', bold; 
+	font-size: 1.8em; 
+} 
+
+.carousel-inner { 
+	height: 700px; 
+} 
+
+.row-flex { 
+	display: flex; 
+	flex-direction: row; 
+} 
+
+
+@media (min-width:577px) and (max-width: 800px) { 
+
+	.section-intro { 
+		height: 500px; 
+	} 
+
+	.about-section p, 
+	.about-section h3 { 
+		font-size: 20px; 
+	} 
+
+	.carousel-inner { 
+		height: auto; 
+	} 
+
+	.row-flex { 
+		display: flex; 
+		flex-direction: column; 
+	} 
+} 
+
+@media screen and (max-width: 576px) { 
+	.section-intro { 
+		height: 300px; 
+	} 
+
+	.about-section { 
+		padding: 30px; 
+	} 
+
+	.about-section p, 
+	.about-section h3 { 
+		font-size: 15px; 
+	} 
+
+	.carousel-inner { 
+		height: auto; 
+	} 
+
+
+} 
