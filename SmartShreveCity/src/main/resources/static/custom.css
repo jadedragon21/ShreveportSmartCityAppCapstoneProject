@@ -1,21 +1,51 @@
-.navbar ul li : : after {
-content: '';
-height: 3px;
-width: 100%;
-background: #009688;
-position: absolute;
+
+/*map css*/
+.map-container-5{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+
+}
+.col-md-6{
+margin: 0 auto;
+float: none;
+margin-bottom: 10px;
+}
+.map-container-5 iframe{
 left:0;
-bottom: -10px;
-transition: 0.5s;
-}
-.navbar ul li :hover::after {
-
+top:0;
+height:100%;
 width:100%;
+position:absolute;
 }
 
-.button:hover span{
-width:100%
-}
-.button: hover{
-border: none;
-}
+ #map {
+    height: 95%;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar ul li : : after {
+  content: '';
+  height: 3px;
+  width: 100%;
+  background: #009688;
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  transition: 0.5s;
+  }
+  .navbar ul li :hover::after {
+
+  width:100%;
+  }
+
+  .button:hover span{
+  width:100%
+  }
+  .button: hover{
+  border: none;
+  }
