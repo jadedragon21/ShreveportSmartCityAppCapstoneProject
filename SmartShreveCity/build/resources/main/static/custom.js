@@ -12,7 +12,7 @@
     });
 
     let image = {
-            url: 'images/Catbusbus.png',
+            url: 'images/molang king.png',
             scaledSize: new google.maps.Size(70, 70)
       };
 
