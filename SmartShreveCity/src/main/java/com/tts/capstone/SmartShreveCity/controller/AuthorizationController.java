@@ -29,6 +29,12 @@ public class AuthorizationController {
         model.addAttribute("user",user);
         return "/login";
     }
+//    @GetMapping("/signup")
+//    public String registration(Model model) {
+//        User user = new User();
+//        model.addAttribute("user",user);
+//        return "/registration";
+//    }
 
     @PostMapping("/signup")
     public String createNewUser(@Valid User user,
@@ -50,7 +56,7 @@ public class AuthorizationController {
                     "Sign up successful!");
             model.addAttribute("user", new User());
         }
-        return "/login";
+        return "/registration";
     }
 
 
