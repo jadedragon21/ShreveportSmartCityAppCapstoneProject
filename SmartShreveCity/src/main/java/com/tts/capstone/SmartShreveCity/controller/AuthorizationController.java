@@ -50,7 +50,7 @@ public class AuthorizationController {
                     "Sign up successful!");
             model.addAttribute("user", new User());
         }
-        return "/login";
+        return "/registration";
     }
 
 
