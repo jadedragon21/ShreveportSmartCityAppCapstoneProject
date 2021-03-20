@@ -1,14 +1,16 @@
 <nav class="row navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" href="#" style="color: #00aced">
-                <i class="fab-twitter"></i> User Signup/ Sign-in for S.S.C.A.</a>
+            <a class="navbar-brand" href="/" style="color: #00aced">
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <i class="fas fa-snowflake"></i> User Signup/Sign-in</a>
         </div>
         <div id="navbar">
             <ul class="nav navbar-nav" sec:authorize="isAuthenticated()">
-                <li><a href="/tweets">Home</a></li>
-                <li><a href="/tweets/new">New Tweet</a></li>
-                <li><a href="/users">Users</a></li>
+                <li><a href="/index.html">Home</a></li>
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li sec:authorize="isAuthenticated()"><a style="pointer-events: none;color: #00aced">
