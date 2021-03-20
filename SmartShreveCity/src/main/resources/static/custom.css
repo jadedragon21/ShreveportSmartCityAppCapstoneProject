@@ -49,3 +49,13 @@ position:absolute;
   .button: hover{
   border: none;
   }
+body {
+    font-family: "Segoe Script";
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #111;
+}
+.h2, h2{
+color: #4287f5;
+}

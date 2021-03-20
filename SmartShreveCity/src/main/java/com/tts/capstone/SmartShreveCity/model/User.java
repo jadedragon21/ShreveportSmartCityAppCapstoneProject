@@ -32,19 +32,21 @@ public class User {
     private Long id;
 
     // @Email, @NotEmpty, @Pattern, @Length are field constraints on our model
-    @Email(message = "Please provide a valid email")
+//    @Email(message = "Please provide a valid email")
     @NotEmpty(message = "Please provide an email")
     private String email;
 
 //    @NotEmpty(message = "Please provide a phone number")
 //    private int phone;
 
+    @NotEmpty(message = "Please provide a user name")
     @Length(min = 3, message = "Your username must have at least 3 characters")
     @Length(max = 15, message = "Your username cannot have more than 15 characters")
     @Pattern(regexp = "[^\\s]+", message = "Your username cannot contain spaces")
     private String username;
 
     @Length(min = 5, message = "Your password must have at least 5 characters")
+    @NotEmpty(message = "Please provide a password")
     private String password;
     @NotEmpty(message = "Please provide your first name")
     private String firstName;
