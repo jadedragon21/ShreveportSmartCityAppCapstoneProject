@@ -6,92 +6,71 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8"> 
 	<meta name="viewport" content="width=device-width, 
-			initial-scale=1, shrink-to-fit=no"> 
-
-<link rel="stylesheet" href="rest.css">  
-    
+			initial-scale=1, shrink-to-fit=no">
+<!--<link rel="stylesheet" href="rest.css">-->
+	<style>
+	h5.card-title{text-align: center;}
+    </style>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href= 
 "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity= 
 "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-		crossorigin="anonymous"> 
-
-	<title>Restaurants Website</title> 
+		crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="/rest.css"/>
+	<title>Shreveport Restaurants</title>
 </head> 
 
 <body> 
-		
-
-	<!-- navbar -->
-	<!-- <nav> 
-		<ul class="nav-flex-row"> 
-			<li class="nav-item"> 
-				<a href="#about">About</a> 
-			</li> 
-			<li class="nav-item"> 
-				<a href="#reservation">Reservation</a> 
-			</li> 
-			<li class="nav-item"> 
-				<a href="#menu">Menu</a> 
-			</li> 
-			<li class="nav-item"> 
-				<a href="#shop">Shop</a> 
-			</li> 
-		</ul> 
-	</nav>  -->
-
-
 	<nav class="navbar navbar-dark bg-dark">
-
-
-	
-
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
 				aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-			<a class="navbar-brand" href="#">Hidden brand</a>
+			<a class="navbar-brand" href="/">Shreveport Smart City Home Page</a>
 			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 				<li class="nav-item active">
 					<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Link</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link disabled" href="#">Disabled</a>
+					<a class="nav-link" href="Festivals.html">Festivals</a>
+					<a class="nav-link" href="Entertainment.html">Entertainment</a>
+					<a class="nav-link" href="weather">Local Weather/Map</a>
+					<a class="nav-link" href="hotel.html">Hotels</a>
+					<a class="nav-link" href="rest.html">Restaurants</a>
+					<a class="nav-link" href="https://spotcrime.com/LA/Shreveport">Spot Crime</a>
+
 				</li>
 			</ul>
-			<!-- <form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form> -->
+
 
 		</div>
 	</nav>
 
-	<section class="section-intro"> 
-		<header> 
-			<h1> Welcome To Shreveport's 
-				Restaurants</h1> 
-		</header> 
-		<div class="link-to-book-wrapper"> 
-			<a class="link-to-book"
-				href="#reservations">Book a table</a> 
-		</div> 
-	</section> 
+	<section class="section-intro">
+		<header>
+			<h1 style="text-align: center;"> Welcome To Shreveport's
+				Restaurants!</h1>
+		</header>
+		<div><img src="/images/restaurantstock.png" alt="restaurant stock photo" width="500" height="600"> </div>
 
-   	  <section class="about-section"> 
+		<div class="link-to-book-wrapper" style="text-align: center;">
+			<p style="color:#fcfcfc;"> Click Here to book a table/ Future Feature</p>
+			<a class="link-to-book"
+				href="#reservations" >Book a table</a>
+		</div> 
+	</section>
+
+   	  <section class="about-section"style="text-align: center;">
 		<div class="container">
 		<article> 
 			<h3> 
-				Some of the Shereveport's best restaurants 
+				Some of Shreveport's Best Restaurants!
 			</h3> 
 			<p> 
-				Presenting Handcrafted Fresh Food 
+				Presenting Hand-crafted Fresh Food:
 			</p> 
 		</article> 
 		</div>
@@ -103,7 +82,7 @@
 				<div class="card-columns">
 			<div class="col">
 			<div class="card" style="width: 18rem;">
-				<img class="card-img-top" src="olive2.png" alt="olivegarden">
+				<img class="card-img-top" src="/images/olive2.png" alt="olivegarden">
 				<div class="card-body">
 				  <h5 class="card-title">Olive Garden</h5>
 				  <!-- rd<p class="card-text">Italian</p> -->
@@ -123,7 +102,7 @@
 		 
 			  <div class="col">
       	  <div class="card" style="width: 18rem;">
-		<img class="card-img-top" src="india2.png" alt="indiasrestaurantshreveport">
+		<img class="card-img-top" src="/images/india2.png" alt="indiasrestaurantshreveport">
 		<div class="card-body">
 		  <h5 class="card-title">India's Restaurant</h5>
 		  <!-- rd<p class="card-text">Italian</p> -->
@@ -140,7 +119,7 @@
 	
 	  <div class="col">  
 	  <div class="card" style="width: 18rem;">
-		<img class="card-img-top" src="franks.png" alt="Frank's Pizza">
+		<img class="card-img-top" src="/images/franks.png" alt="Frank's Pizza">
 		<div class="card-body">
 		  <h5 class="card-title">Frank's Pizza</h5>
 		  <!-- rd<p class="card-text">Italian</p> -->
@@ -164,7 +143,7 @@
 					<div class="card-columns">
 						<div class="col">
 				<div class="card" style="width: 18rem;">
-					<img class="card-img-top" src="max1.png" alt="Maxwell">
+					<img class="card-img-top" src="/images/max1.png" alt="Maxwell">
 				<div class="card-body">
 				  <h5 class="card-title">Maxwell's Market</h5>
 				  <!-- rd<p class="card-text">Italian</p> -->
@@ -180,7 +159,7 @@
 
 			<div class="col">
 	  <div class="card" style="width: 18rem;">
-				<img class="card-img-top" src="rhino1.png" alt="Cafe">
+				<img class="card-img-top" src="/images/rhino1.png" alt="Cafe">
 			<div class="card-body">
 			  <h5 class="card-title">Rhino's Cafe</h5>
 			  <!-- rd<p class="card-text">Italian</p> -->
@@ -193,26 +172,11 @@
 			</div>
 		  </div>
 		</div>
-	
-		<!-- <div class="col">
-			<div class="card" style="width: 18rem;">
-					  <img class="card-img-top" src="rhino1.png" alt="Cafe">
-				  <div class="card-body">
-					<h5 class="card-title">Rhino's Cafe</h5>
-					
-					<a href="https://rhinocoffee.com/" target="_blank" class="btn btn-primary">Cafe</a>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star checked"></span>
-					<span class="fa fa-star"></span>
-					<span class="fa fa-star"></span>
-				  </div>
-				</div>
-			  </div> -->
+
 		  
 		<div class="col">
        <div class="card" style="width: 18rem;">
-		<img class="card-img-top" src="el2.png" alt="El">
+		<img class="card-img-top" src="/images/el2.png" alt="El">
 		<div class="card-body">
 		  <h5 class="card-title">El Compadre Mexican Restaurant & Seafood</h5>
 		  <!-- rd<p class="card-text">Italian</p> -->
@@ -237,7 +201,7 @@
 			<div class="card-columns">
 		<div class="col">
 		<div class="card" style="width: 18rem;">
-			<img class="card-img-top" src="jan1.png" alt="Jans">
+			<img class="card-img-top" src="/images/jan1.png" alt="Jans">
 			<div class="card-body">
 			  <h5 class="card-title">Jan’s River Restaurant</h5>
 			  <!-- rd<p class="card-text">Italian</p> -->
@@ -253,7 +217,7 @@
 	 
 		  <div class="col">
 		<div class="card" style="width: 18rem;">
-	<img class="card-img-top" src="bis.png" alt="Bistro">
+	<img class="card-img-top" src="/images/bis.png" alt="Bistro">
 	<div class="card-body">
 	  <h5 class="card-title">Bistro to Go</h5>
 	  <!-- rd<p class="card-text">Italian</p> -->
@@ -270,7 +234,7 @@
 
   <div class="col">  
   <div class="card" style="width: 18rem;">
-	<img class="card-img-top" src="well1.png" alt="Well Fed">
+	<img class="card-img-top" src="/images/well1.png" alt="Well Fed">
 	<div class="card-body">
 	  <h5 class="card-title">Well+Fed Louisiana</h5>
 	  <!-- rd<p class="card-text">Italian</p> -->
@@ -289,15 +253,15 @@
 </section>
 
 		
-	</section>
+
 	<section class="about-section"> 
 		<div class="container">
 					<article> 
 			<h3> 
-				Enjoy Dining at Shereveport's restaurants 
+				Enjoy Dining at Shreveport's Local Restaurants
 			</h3> 
 			<p> 
-				Delicious and Fresh 
+				Where you can eat delicious and fresh  food everyday!
 			</p> 
 		</article> 
 		</div>
@@ -308,15 +272,15 @@
 		class="carousel slide" data-ride="carousel"> 
 		<div class="carousel-inner"> 
 			<div class="carousel-item active"> 
-				<img src="food1.png"
+				<img src="/images/food1.png"
 					class="d-block w-100" alt="food"> 
 			</div> 
 			<div class="carousel-item"> 
-				<img src="food2.png"
+				<img src="/images/food2.png"
 					class="d-block w-100" alt="food"> 
 			</div> 
 			<div class="carousel-item"> 
-				<img src="food3.png"
+				<img src="/images/food3.png"
 					class="d-block w-100" alt="food"> 
 			</div> 
 		</div> 
@@ -342,13 +306,13 @@
 		<div class="row-flex"> 
 			<div class="flex-column-form"> 
 				<h3> 
-					Make a booking 
+					Book your Reservations Here:
 				</h3> 
 				<form class="media-centered"> 
 					<div class="form-group"> 
 						<p> 
-							Please leave your number we will 
-							call to make a reservation 
+							Please leave your number here.<br> We will
+							call you to book your reservation. Thank you.
 						</p> 
 						
 						<input type="name" class="form-control"
@@ -360,7 +324,7 @@
 						<input type="number" class="form-control"
 							id="exampleInputphoneNumber1"
 							placeholder="Enter your phone number"> 
-					</div> 
+					</div>
 					<button type="submit" class="btn btn-primary"> 
 						Submit 
 					</button> 
@@ -387,9 +351,19 @@
 				</p> 
 			</div> 
 		</div> 
-	</div> 
-
-
+	</div>
+<footer class="footer" style="background-color: #000;">
+<div class="container">
+<div class="row">
+	<div class="col-sm">
+					<li><strong>FOLLOW</strong></li>
+					<a href="https://twitter.com/?lang=en"><li>Twitter</li></a>
+					<a href="https://www.instagram.com/"><li>Instagram</li></a>
+					<a href="https://www.facebook.com/"><li>Facebook</li></a>
+				</div>
+			</div>
+		</div>
+	<small class="footer__legal" style="text-align: center; color:#f5f7fa" >&copy; 2021 S.A.A.P.S. Group Five All Rights Reserved.</small>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -398,21 +372,19 @@
 		integrity= 
 "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"> 
-	</script> 
-	
+	</script>
 	<script src= 
 "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
 		integrity= 
 "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 		crossorigin="anonymous"> 
-	</script> 
-	
+	</script>
 	<script src= 
 "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity= 
 "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"> 
-	</script> 
-</body> 
+	</script>
+</body>
 
 </html> 

@@ -1,34 +1,9 @@
-
-/*map css*/
-.map-container-5{
-overflow:hidden;
-padding-bottom:56.25%;
-position:relative;
-height:0;
-
-}
-.col-md-6{
-margin: 0 auto;
-float: none;
-margin-bottom: 10px;
-}
-.map-container-5 iframe{
-left:0;
-top:0;
-height:100%;
-width:100%;
-position:absolute;
-}
-
- #map {
-    height: 95%;
-  }
-  html, body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
   }
-.navbar ul li : : after {
+  .navbar ul li : : after {
   content: '';
   height: 3px;
   width: 100%;
@@ -57,7 +32,8 @@ body {
     background-color: #111;
 }
 .h2, h2{
-color: #4287f5;
+color:#f0f3f5;
+font-family: Segoe Script;
 }
 /* Hamburger NavBar */
 /* Icon 1 */
@@ -230,29 +206,9 @@ top: 21px;
 left: 8px;
 }
 /* nav link  */
-a.nav-link{
-color:#f5f6f7;
-}
-.navbar-nav{
-color:#f5f6f7;
-font-family: Segoe Script;
+a{
+color:#d0e2f2;
 }
 .bg-dark {
     background-color:#8b9094!important;
-}
-/* card  */
-div.card-deck{
-background-color: #36403e;
-}
-div.card-deck:nth-child(6){
-background-color: #36403e;
-}
-div.card:nth-child(5) > div:nth-child(1){
-background-color: #36403e;
-}
-body > div:nth-child(3) > div:nth-child(1){
-background-color: #36403e;
-}
-div.card:nth-child(12) > div:nth-child(1){
-background-color: #36403e;
 }

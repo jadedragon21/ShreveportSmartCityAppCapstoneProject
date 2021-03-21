@@ -39,3 +39,48 @@
     google.maps.event.addListener(marker, 'click', () => infowindow.open(map, marker));
 
 }
+
+//ham navbar/accordian
+$(document).ready(function () {
+
+  $('.first-button').on('click', function () {
+
+    $('.animated-icon1').toggleClass('open');
+  });
+  $('.second-button').on('click', function () {
+
+    $('.animated-icon2').toggleClass('open');
+  });
+  $('.third-button').on('click', function () {
+
+    $('.animated-icon3').toggleClass('open');
+  });
+});
+//ham navbar
+
+
+  /* multi carousel*/
+$('#recipeCarousel').carousel({
+  interval: 100
+})
+
+$('.carousel .carousel-item').each(function(){
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+
+
+

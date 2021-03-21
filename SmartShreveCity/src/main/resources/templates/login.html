@@ -13,17 +13,17 @@
     <div th:replace="fragments/navbar"/>
 </div>
 <div class="container">
-    <h2>Welcome!</h2>
+    <h2 style="text-align:center">Welcome!</h2>
     <form th:action="@{/login}" method="post"><br/>
         <input type="text" id="username" name="username" th:placeholder="Username" class="form-control"/> <br/>
         <input type="password" th:placeholder="Password" id="password" name="password" class="form-control"/> <br/>
         <div align="center" th:if="${param.error}">
             <h4 style="color: red">Login unsuccessful.</h4>
         </div>
-        <button class="btn btn-md btn-success btn-block" name="Submit" value="Login" type="Submit">Log in</button>
+        <button class="btn btn-md btn-dark btn-block" name="Submit" value="Login" type="Submit">Log in</button>
     </form>
     <form th:action="@{/signup}" method="post"><br/>
-        <button class="btn btn-md btn-success btn-block" name="Submit" value="Submit" type="Submit">Sign up</button>
+        <button class="btn btn-md btn-dark btn-block" name="Submit" value="Submit" type="Submit">Sign up</button>
     </form>
 
 </div>
@@ -31,3 +31,5 @@
 <div th:replace = "/fragments/footer :: copy"></div>
 </body>
 </html>
+
+
