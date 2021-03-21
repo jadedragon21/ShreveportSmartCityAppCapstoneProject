@@ -2,9 +2,6 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="/" style="color: #00aced">
-                <div class="spinner-border" role="status">
-                    <span class="sr-only">Loading...</span>
-                </div>
                 <i class="fas fa-snowflake"></i> User Signup/Sign-in</a>
         </div>
         <div id="navbar">
@@ -17,8 +14,9 @@
                     @<span sec:authentication="name"></span></a>
                 <li sec:authorize="isAuthenticated()"><a href="../logout">Logout</a></li>
                 <li sec:authorize="!isAuthenticated()"><a href="../login">Login</a></li>
-<!--                <li sec:authorize="!isAuthenticated()"><a href="../login">Login</a></li>-->
+
             </ul>
         </div>
     </div>
 </nav>
+

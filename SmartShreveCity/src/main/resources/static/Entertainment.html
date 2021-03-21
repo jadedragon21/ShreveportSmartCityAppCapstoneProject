@@ -5,119 +5,91 @@
 <title>Shreveport-Bossier Entertainment</title>
   <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
 
-  <!-- StyleSheets here -->
-  <!-- /* <link rel = "stylesheet" href = "assets/ExploreShv.js"> */ -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-    .body {
-      font-family: sans-serif;
-    }
+    <!-- StyleSheets here -->
+    <!-- /* <link rel = "stylesheet" href = "assets/ExploreShv.js"> */ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
 
-    .image:hover {
-      opacity: 0.5;
-      transition: .9s;
-    }
-
-    /* Clearfix (clear floats)
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 4px;
-    }
-
-    /* Create four equal columns that sits next to each other */
-    .column {
-      flex: 25%;
-      max-width: 25%;
-      padding: 0 4px;
-    }
-
-    .column img {
-      margin-top: 8px;
-      vertical-align: middle;
-      object-fit: cover;
-      width: 100%;
-    }
-
-
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px) {
-      .column {
-        flex: 50%;
-        max-width: 50%;
-      }
-    }
-
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .column {
-        flex: 100%;
-        max-width: 100%;
-      }
-    }
-
-    /* Float four columns side by side
- 
-        .photo {
-            max-width: 31.333%;
-            padding: 0 10px;
-            height: 240px;
-        }  */
-    /* Style the footer */
-    footer {
-      background-color: rgba(123, 72, 153, 0.822);
-      padding: 10px;
-      text-align: center;
-      color: white;
-    }
-  </style>
 </head>
 
 
-<h1 style="text-align:center">Explore Shreveport-Bossier </h1>
+
 
 <body style= " background-color:tan (185, 129, 56);">
-<div class =container>
-  <nav class="navbar navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <a class="navbar-brand" href="#">Hidden brand</a>
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="Festivals.html">Festivals</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Entertainment</a>
-            </li>
-        </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
-    </div>
-</nav>
-</div>
+<!-- The sidebar -->
+<!--<div class="sidebar">-->
+<!--  <a class="active" href="index.html">Home</a>-->
+<!--  <a href="rest.html">Restaurants</a>-->
+<!--  <a href="Festivals.html">Festivals</a>-->
+<!--  <a href="Entertainment.html">Entertainment</a>-->
+<!--  <a href="weather">Local Weather/Map</a>-->
+<!--  <a href="hotel.html">Hotels</a>-->
+
+
+<!-- Sidebar -->
+<nav class="sidebar">
+
+  <!-- close sidebar menu -->
+  <div class="dismiss">
+    <i class="fas fa-arrow-left"></i>
+  </div>
+
+  <div class="logo">
+    <h3><a href="index.html">Shreveport Smart City App</a></h3>
+  </div>
+
+  <ul class="list-unstyled menu-elements">
+    <li class="active">
+      <a class="scroll-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+    </li>
+    <li>
+      <a class="scroll-link" href="rest.html"><i class="fas fa-cog"></i>Restaurants</a>
+    </li>
+    <li>
+      <a class="scroll-link" href="Festivals.html"><i class="fas fa-user"></i>Festivals</a>
+    </li>
+    <li>
+      <a class="scroll-link" href="Entertainment.html"><i class="fas fa-pencil-alt"></i>Entertainment</a>
+    </li>
+    <li>
+      <a class="scroll-link" href="weather"><i class="fas fa-envelope"></i>Local Weather/Map</a>
+    </li>
+    <li>
+      <a class="scroll-link" href="hotel.html"><i class="fas fa-envelope"></i>Hotels</a>
+    </li>
+  </ul>
+
+
+
+
+
+
+
+<!-- Wrapper -->
+<div class="wrapper">
+<h1 style="text-align:center; margin-top: 800;">Explore Shreveport-Bossier </h1>
+
 
   <div class="container">
     <!-- <span class="container"> -->
@@ -163,8 +135,7 @@
     </div>
   </div>
 
-  </span>
-  </div>
+
   <h1 style="font-size:50px ; text-align: center">
     Discover Things to Do in Shreveport-Bossier
   </h1>
@@ -182,7 +153,7 @@
     For those who prefer to be indoors, there is even more to do,
     from museums and art galleries to aquariums and historic homes.
   </p>
-  </div>
+
 
   <section>
     <div class="row">
@@ -241,14 +212,29 @@
         </a>
       </div>
     </div>
-    </div>
+
   </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+</div>
+  <!-- End content -->
+</div>
+<!-- End wrapper -->
+<!-- Javascript -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery-migrate-3.0.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script type="text/javascript" src="/custom.js"></script>
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"-->
+<!--    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"-->
+<!--    crossorigin="anonymous"></script>-->
+<!--  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"-->
+<!--    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"-->
+<!--    crossorigin="anonymous"></script>-->
 </body>
 
 <!-- Footer -->
