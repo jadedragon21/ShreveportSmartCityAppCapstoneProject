@@ -234,12 +234,9 @@ a.nav-link{
 color:#f5f6f7;
 }
 .navbar-nav{
-color:#f5f6f7;
-font-family: Segoe Script;
+
 }
-.bg-dark {
-    background-color:#8b9094!important;
-}
+
 /* card  */
 div.card-deck{
 background-color: #36403e;
@@ -255,4 +252,21 @@ background-color: #36403e;
 }
 div.card:nth-child(12) > div:nth-child(1){
 background-color: #36403e;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50;
+  height: 50;
+}
+div.form-group{
+color:#fcfdff;
+font-family:Segoe Script;
+}
+.btn{
+color:#050505;
+}
+body > h1:nth-child(2){
+color:#4cb3b5;
 }

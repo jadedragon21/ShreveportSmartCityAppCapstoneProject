@@ -66,6 +66,17 @@ background-color:#4745c4;
 	flex: 1;
 
 } 
+.cards {
+
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+grid-auto-rows: auto;
+
+grid-gap: 1rem;
+
+}
 
 
 
@@ -73,8 +84,10 @@ background-color:#4745c4;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
-	width: 300px;
-	height: 300px;
+	width: 100%;
+	height: 100%;
+	 grid-row: 2/3;
+      grid-column: 2/3;
   }
 
   .checked {
@@ -129,7 +142,7 @@ a.link-to-book:hover {
 
 .btn.btn-primary { 
 	font-family: 'Big Shoulders Text', cursive; 
-	color: #ffffff; 
+	color: #fff;
 	background-color: #95999e; 
 	text-transform: uppercase; 
 	font-size: 16px; 
@@ -142,7 +155,7 @@ a.link-to-book:hover {
 	background-color: #747474; 
 } 
 .opening-time, 
-.contact-adress { 
+.contact-address {
 	flex: 1; 
 	margin: 30px 20px; 
 	font-size: 1.2em; 
@@ -153,7 +166,7 @@ a.link-to-book:hover {
 } 
 
 .opening-time p span, 
-.contact-adress p span { 
+.contact-address p span {
 	display: block; 
 } 
 
@@ -220,4 +233,17 @@ a.link-to-book:hover {
 		text-align: center; 
 	} 
 
-} 
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: #0d0d0d;
+  font-family: Segoe Script;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
