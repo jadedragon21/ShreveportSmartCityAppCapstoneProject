@@ -1,15 +1,13 @@
 package com.tts.capstone.SmartShreveCity.controller;
 
 import com.tts.capstone.SmartShreveCity.model.User;
+import com.tts.capstone.SmartShreveCity.repository.UserRepository;
 import com.tts.capstone.SmartShreveCity.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -17,6 +15,9 @@ import javax.validation.Valid;
 public class AuthorizationController {
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private UserRepository userRepository;
 
     public AuthorizationController(UserService userService) {
         this.userService = userService;
@@ -60,16 +61,41 @@ public class AuthorizationController {
     }
 
 
-    @RequestMapping(value="/login", method= RequestMethod.GET)
+    @PostMapping(value="/login")
     public String login(){
-        return "login";}
+        return "login";
+    }
+
+
+    @PostMapping("/update/{id}")
+    public String updateUser(@PathVariable("id") long id, @Valid User user,
+                             BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            user.setId(id);
+            return "update-user";
+        }
+
+        userRepository.save(user);
+        return "redirect:/user-index";
+    }
+
+
+    @PostMapping("/delete/{id}")
+    public String deleteUser(@PathVariable("id") long id, Model model) {
+        User user = userRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+        System.out.println(user);
+        userRepository.delete(user);
+        return "redirect:/update-user";
+    }
 //
 //    @RequestMapping(value="/login", method= RequestMethod.GET)
 //    public String login(){
 //        return "index";}
 
-//        @PostMapping(value="/index")
-//    public String goHome(){
-//        return "index";
-//        }
+    @PostMapping(value="/index")
+    public String showUserList(Model model) {
+        model.addAttribute("users", userRepository.findAll());
+        return "redirect:/user-index";
+        }
 }

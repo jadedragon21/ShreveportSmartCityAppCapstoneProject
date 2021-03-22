@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <title>Update User</title>
+    <div th:replace="/fragments/header :: header"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/custom.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div th:replace="fragments/navbar"/>
+    </div>
+    <form action="#"
+          th:action="@{/update/{id}(id=${user.id})}"
+          th:object="${user}"
+          method="post">
+        <div class="form-group">
+            <label th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" class="validation-message">First Name</label>
+            <input type="text" th:field="*{firstName}" placeholder="First Name" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="validation-message"> Last
+                Name
+            </label>
+            <input type="text" th:field="*{lastName}" placeholder="Last Name" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label th:if="${#fields.hasErrors('username')}" th:errors="*{username}" class="validation-message">User Name
+            </label>
+            <input type="text" th:field="*{username}" placeholder="Username" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="validation-message">Email</label>
+            <input type="text" th:field="*{email}" placeholder="Email" class="form-control"/>
+        </div>
+        <div class="form-group">
+            <label th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="validation-message">Password
+            </label>
+            <input type="password" th:field="*{password}" placeholder="Password" class="form-control"/>
+        </div>
+        <!--
+        <label for="name">Name</label>
+        <input type="text" th:field="*{name}" id="name" placeholder="Name">
+        <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+        <label for="email">Email</label>
+        <input type="text" th:field="*{email}" id="email" placeholder="Email">
+        <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+        -->
+<!--        <input type="submit" value="Update User">-->
+        <button type="submit" th:name="action" th:value="Update User">Update</button>
+        <button type="submit" th:name="action" th:value="Delete User">Delete</button>
+    </form>
+
+
+    <div th:replace = "/fragments/footer :: scripts"></div>
+    <div th:replace = "/fragments/footer :: copy"></div>
+</body>
+</html>
