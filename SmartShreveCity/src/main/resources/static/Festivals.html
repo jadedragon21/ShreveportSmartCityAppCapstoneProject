@@ -28,7 +28,8 @@
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-		<img class="navbar-brand" src="/images/162px-Seal_of_Shreveport,_Louisiana.png" alt="Shreve Seal" width="50" height="50">
+		<img class="navbar-brand" src="/images/162px-Seal_of_Shreveport,_Louisiana.png" alt="Shreve Seal" width="50"
+			 height="50">
 		<a class="navbar-brand" href="index.html">Shreveport Smart City Home Page</a>
 		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 			<li class="nav-item">
@@ -38,7 +39,11 @@
 				<a class="nav-link" href="hotel.html">Hotels</a>
 				<a class="nav-link" href="rest.html">Restaurants</a>
 				<a class="nav-link" href="https://spotcrime.com/LA/Shreveport">Spot Crime</a>
-			</li>
+				<th:block th:if="${loggedInUser != null}">
+					<a class="nav-item active" th:unless="${loggedInUser == null}">
+						<a class="nav-link" href="/logout">Sign Out</a>
+					</a>
+				</th:block>
 		</ul>
 	</div>
 </nav>
@@ -46,10 +51,10 @@
 <section class="about-section">
 	<div class="container">
 		<article>
-			<h1>
+			<h1 style="text-align: center">
 				Festivals And Annual Events
 			</h1>
-			<p style = "font-weight:bold">
+			<p style="text-align: center">
 				<br>
 				There's always something to celebrate in Shreveport - Bossier, and we like to do it up right with food,
 				fun, music and great entertainment.

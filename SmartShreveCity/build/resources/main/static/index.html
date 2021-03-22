@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/custom.css"/>
 </head>
-<body >
+<body>
 
 <nav class="navbar navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
@@ -16,7 +17,8 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <img class="navbar-brand" src="/images/162px-Seal_of_Shreveport,_Louisiana.png" alt="Shreve Seal" width="50" height="50">
+        <img class="navbar-brand" src="/images/162px-Seal_of_Shreveport,_Louisiana.png" alt="Shreve Seal" width="50"
+             height="50">
         <a class="navbar-brand" href="index.html">Shreveport Smart City Home Page</a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
@@ -26,59 +28,68 @@
                 <a class="nav-link" href="hotel.html">Hotels</a>
                 <a class="nav-link" href="rest.html">Restaurants</a>
                 <a class="nav-link" href="https://spotcrime.com/LA/Shreveport">Spot Crime</a>
+                <th:block th:if="${loggedInUser != null}">
+                    <a class="nav-item active" th:unless="${loggedInUser == null}">
+                        <a class="nav-link" href="/logout">Sign Out</a>
+                    </a>
+                </th:block>
             </li>
         </ul>
     </div>
 </nav>
 
 
-        <h1 style="font-size:70px; margin-top:80px; text-align:center;"> WELCOME TO SHREVEPORT</h1>
-
-
-
-
-
-
-
-
-
+<h1 style="font-size:70px; margin-top:80px; text-align:center;"> WELCOME TO SHREVEPORT!</h1>
+<h2 style="font-size:60px; text-align:center;"> Make sure to try the crispy fried gator bites while your here. <br> It tastes like chicken.</h2>
 
 
 <span class="border border-dark">
 <div class="card-deck" style="color: tan;">
     <div class="card" style="background-color: #009688;">
-        <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/8d/04/5d/grub-shreveport.jpg" alt="Card image cap">
+        <img class="card-img-top" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/8d/04/5d/grub-shreveport.jpg"
+             alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Restaurants</h5>
-            <p class="card-text">Louisiana’s own ethnic Creole and Cajun cuisines are a great way to begin culinary sampling, and diners can also enjoy Tex-Mex barbecue style cooking, classic Mexican, French, Italian, Chinese, Japanese, Thai, Greek, Polynesian, Indian food, and the ever popular seafood and steak combination. </p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title" style="font-size:30px; text-align:center;">Restaurants</h5>
+            <p class="card-text" style="font-size:30px; text-align:center;">Louisiana’s own ethnic Creole and Cajun cuisines are a great way to begin culinary sampling, and diners can also enjoy Tex-Mex barbecue style cooking, classic Mexican, French, Italian, Chinese, Japanese, Thai, Greek, Polynesian, Indian food, and the ever popular seafood and steak combination. </p>
+            <p class="card-text" style="background-color: #000;"><small class="text-muted" style="color: #ffffff;">Last updated 3 mins ago</small></p>
         </div>
     </div>
-    <div class="card"  style="background-color: #009688;">
-        <img class="card-img-top" src="https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/shreveport/Events_Open_Graph_Image_1c99ba21-770a-412a-a5c6-51faa337a0f0.jpg" alt="Card image cap">
+        </div>
+    <div class="card" style="background-color: #009688;">
+        <img class="card-img-top"
+             src="https://assets.simpleviewcms.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/shreveport/Events_Open_Graph_Image_1c99ba21-770a-412a-a5c6-51faa337a0f0.jpg"
+             alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Festivals</h5>
-            <p class="card-text">There are many festivals in Shreveport and the neighboring areas.During four days over each Memorial Day weekend for the last 25 years, the Mudbug Madness Festival has been celebrated in Shreveport’s Festival Plaza. Featuring both Creole and Cajun foods, Mudbug Madness includes a huge public seafood boil that residents call the granddaddy of them all. A more recent culinary tradition called the Annual Gentlemen's Cooking Classic is sponsored by the Southern University at Shreveport Foundation. </p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title" style="font-size:30px; text-align:center;">Festivals</h5>
+            <p class="card-text" style="font-size:30px; text-align:center;">There are many festivals in Shreveport and the neighboring areas.During four days over each Memorial Day weekend for the last 25 years, the Mudbug Madness Festival has been celebrated in Shreveport’s Festival Plaza. Featuring both Creole and Cajun foods, Mudbug Madness includes a huge public seafood boil that residents call the granddaddy of them all. A more recent culinary tradition called the Annual Gentlemen's Cooking Classic is sponsored by the Southern University at Shreveport Foundation. </p>
+            <p class="card-text" style="background-color: #000;"><small class="text-muted" style="color: #ffffff;">Last updated 3 mins ago</small></p>
         </div>
     </div>
-    <div class="card"  style="background-color: #009688;">
-        <img class="card-img-top" src="http://retireshreveportbossier.com/wp-content/uploads/2014/05/thestrand2.jpg" alt="Card image cap">
+    <div class="card" style="background-color: #009688;">
+        <img class="card-img-top" src="http://retireshreveportbossier.com/wp-content/uploads/2014/05/thestrand2.jpg"
+             alt="Card image cap">
         <div class="card-body">
-            <h5 class="card-title">Entertainment</h5>
-            <p class="card-text">Shreveport’s museums and art galleries provide an ever changing variety of exhibits for people to enjoy while the cultural festivals that occur each month provide another enjoyable opportunity for family entertainment. And for those who have fun shopping, the Louisiana Boardwalk in Bossier City is the largest combination shopping, dining and entertainment center in Louisiana.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title" style="font-size:30px; text-align:center;">Entertainment</h5>
+            <p class="card-text" style="font-size:30px; text-align:center;">Shreveport’s museums and art galleries provide an ever changing variety of exhibits for people to enjoy while the cultural festivals that occur each month provide another enjoyable opportunity for family entertainment. And for those who have fun shopping, the Louisiana Boardwalk in Bossier City is the largest combination shopping, dining and entertainment center in Louisiana.</p>
+            <p class="card-text" style="background-color: #000;"><small class="text-muted" style="color: #ffffff;">Last updated 3 mins ago</small></p>
         </div>
     </div>
+
 
 
 <div class="elfsight-app-60b341b2-8541-457f-a4d5-ba08985a864e"></div>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-2ef49633-ed7c-4206-ad41-772bcd8d29c9"></div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 <footer class="footer" style="background-color: #000;
     color: tan;
@@ -92,7 +103,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <a href="/"><li><strong>Home</strong></li></a>
+                <a href="/">
+                    <li><strong>Home</strong></li>
+                </a>
 
             </div>
             <div class="col-sm">
@@ -107,16 +120,22 @@
                     <div class="row">
                         <div class="col-sm">
                             <li><strong>FOLLOW</strong></li>
-                            <a href="https://twitter.com/?lang=en"><li>Twitter</li></a>
-                            <a href="https://www.instagram.com/"><li>Instagram</li></a>
-                            <a href="https://www.facebook.com/"><li>Facebook</li></a>
+                            <a href="https://twitter.com/?lang=en">
+                                <li>Twitter</li>
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <li>Instagram</li>
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <li>Facebook</li>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="footer__legal" style="text-align: center; color:#f5f7fa" >&copy; 2021 S.A.A.P.S. Group Five All Rights Reserved.</div>
-
-</footer>
-
+                <div class="footer__legal" style="text-align: center; color:#f5f7fa">&copy; 2021 S.A.A.P.S. Group Five
+                    All Rights Reserved.
+                </div>
+            </footer>
 
 
 </html>
